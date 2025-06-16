@@ -11,3 +11,8 @@
       apt:
         name: "vim"
         state: present
+
+    - name: check /etc/password
+      ansible.builtin.file:
+        path: /etc/passwd
+        state: file
