@@ -1,0 +1,10 @@
+- name: Installation de role
+  hosts: all
+  become: true
+  become_user: root
+  tasks:
+    - name: Install role geerlingguy.docker
+      ansible.builtin.include_role:
+        name: geerlingguy.docker
+      vars:
+        docker_edition: 'ce'
