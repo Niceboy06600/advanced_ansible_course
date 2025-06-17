@@ -1,0 +1,2 @@
+- name: Import playbook Tp4
+  ansible.builtin.import_playbook: ../Tp4/tp4.yaml
